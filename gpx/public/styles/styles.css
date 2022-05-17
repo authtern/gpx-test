@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+html {
+  background-color: #0d0c0c;
+  width: 100%;
+}
+
+body {
+  max-width: 1366px;
+  width: 100%;
+
+  padding: 30px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+a {
+  color: #555555;
+}
+
+h1, h3 {
+  color: #f2f2f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding-left: 20px;
+
+  background-color: #1E1E1E;
+  border-radius: 4px;
+  color: #FFF;
+
+  height: 35px;
+  width: 100%;
+  max-width: 264px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+input::placeholder {
+    color: #555555;
+    opacity: 1;
+}
+
+select {
+  padding-left: 20px;
+
+  background-color: #1E1E1E;
+  border-radius: 4px;
+  color: #FFF;
+
+  height: 35px;
+  width: 100%;
+  max-width: 264px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+.btn {
+  background-color: #555555;
+  color: #FFF;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.btn__delete {
+  background-color: #FB4141;
+}
+
+.btn__add {
+  background-color: #e3812a;
+}
+
+.btn__delete:hover {
+  background-color: #EA3131;
+}
+
+main {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  opacity: 0;
+  animation: showAnim 2.5s forwards;
+}
+
+ol {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 40%;
+  color: #FFF;
+}
+
+table td, table th {
+  border: 1px solid #242424;
+  padding: 8px;
+}
+
+table tr {
+  background-color: #1D1E1D;
+}
+
+table tr:hover {
+  background-color: #212221;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  user-select: none;
+}
+
+.table__overflow {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.chart {
+  max-width: 300px;
+}
+
+.chart__pie {
+  width: 100%;
+  max-width: 600px;
+}
+
+@keyframes showAnim {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
